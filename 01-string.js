@@ -20,6 +20,9 @@ console.log("SOAL 3");
 
 function firstNameOnly(fullname) {
     const myStr = fullname.split(" ");
+    if(myStr.length <= 1){
+        return myStr[0];
+    }
     return (myStr[0] + " " + myStr[1].substr(0, 1));
 }
 
